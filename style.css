@@ -64,6 +64,7 @@ button {
 @media screen and (max-width: 600px) {
     .top-banner {
         padding: 1rem;
+        margin: 1rem;
     }
 
     .top-banner h1 {
@@ -91,6 +92,7 @@ button {
 
 /* Tour Section  */
 .popular-tours {
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -120,6 +122,7 @@ button {
 
 @media screen and (max-width: 600px) {
     .popular-tours {
+        margin-top: 1rem;
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem;
     }
@@ -131,5 +134,99 @@ button {
     .tours-content button {
         margin-bottom: 1rem;
         width: 50%;
+    }
+}
+
+/* Choose Destination */
+.choose-destination {
+    margin-top: 4rem;
+}
+
+.choose-destination h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.choose-destination p {
+    text-align: center;
+    margin: 0;
+}
+
+.destination-content {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.destination-gallery img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.destination-gallery .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.second-row {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "srilanka america kashmir";
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.third-row {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "bangladesh bandarban";
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .choose-destination {
+        margin-top: 1rem;
+    }
+
+    .destination-gallery {
+        margin: 0 1rem;
+    }
+
+    .destination-content {
+        width: 100%;
+    }
+
+    .first-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .second-row {
+        grid-template-areas: "srilanka" "america" "kashmir";
+    }
+
+    .third-row {
+        grid-template-areas: "bangladesh" "bandarban";
+    }
+
+    .destination-gallery img {
+        border-radius: .5rem;
     }
 }

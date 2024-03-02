@@ -19,7 +19,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/Images/Group-13.png");
+    background-image: url("/images/group-13.png");
     background-size: cover;
     height: 100%;
     color: white;
@@ -48,6 +48,7 @@ button {
 
 .find-btn {
     background-color: rgb(255, 84, 0);
+    color: white;
 }
 
 .banner-container {
@@ -55,14 +56,10 @@ button {
     display: flex;
     gap: .5rem;
     padding: 2rem;
-    /* background-color: aquamarine; */
     border-radius: .5rem;
     background-color: rgb(255 255 255 / 20%);
     backdrop-filter: blur(5px);
 }
-
-
-
 
 @media screen and (max-width: 600px) {
     .top-banner {
@@ -89,5 +86,50 @@ button {
     button {
         width: 100%;
         padding: .8rem;
+    }
+}
+
+/* Tour Section  */
+.popular-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tours-content {
+    padding: .5rem;
+}
+
+.tours-content .description {
+    color: rgba(19, 19, 24, 0.7);
+    list-style-type: none;
+}
+
+.tours-content p {
+    text-align: justify;
+    color: rgba(19, 19, 24, 0.7);
+}
+
+.tours-content button {
+    color: white;
+    padding: 1rem;
+}
+
+.tours-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .popular-tours {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+
+    .tours-content {
+        padding: 0;
+    }
+
+    .tours-content button {
+        margin-bottom: 1rem;
+        width: 50%;
     }
 }

@@ -1,7 +1,23 @@
+/* Common css */
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+}
+
+p {
+    color: rgba(19, 19, 24, 0.7);
+}
+
+h1 {
+    color: rgb(19, 19, 24);
+}
+
+.theme-btn {
+    background-color: rgb(255, 84, 0);
+    color: white;
+    padding: .8rem;
 }
 
 header,
@@ -30,11 +46,13 @@ footer {
     font-size: 4rem;
     font-weight: 800;
     margin: 0;
+    color: #fff;
 }
 
 .top-banner p {
     font-size: 1rem;
     font-weight: 400;
+    color: #fff;
 }
 
 .top-banner input,
@@ -44,11 +62,6 @@ button {
     border: none;
     border-radius: .3rem;
     width: 180px;
-}
-
-.find-btn {
-    background-color: rgb(255, 84, 0);
-    color: white;
 }
 
 .banner-container {
@@ -111,11 +124,6 @@ button {
     color: rgba(19, 19, 24, 0.7);
 }
 
-.tours-content button {
-    color: white;
-    padding: 1rem;
-}
-
 .tours-img img {
     width: 100%;
 }
@@ -176,6 +184,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 .first-row {
@@ -300,5 +309,99 @@ button {
 
     .choose-us-second-row {
         width: 100%;
+    }
+}
+
+/* Discount */
+.discount-content {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.discount-content h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.discount-content p {
+    text-align: center;
+    margin: 0;
+}
+
+.resort-1,
+.resort-2,
+.resort-3 {
+    background-image: url("/images/group-39.png");
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: end;
+    margin-bottom: 1rem;
+}
+
+.resort-2 {
+    background-image: url("/images/group-40.png");
+    justify-content: start;
+}
+
+.resort-card {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    width: 40%;
+    opacity: .9;
+    border-radius: 1rem;
+}
+
+.resort-card h1 {
+    margin: 0;
+}
+
+.resort-card p {
+    margin-top: 0;
+    margin-right: 1.5rem;
+}
+
+.resort-card i {
+    margin-right: .4rem;
+    color: rgb(255, 84, 0);
+}
+
+.package-price {
+    color: rgb(255, 84, 0);
+    font-weight: 600;
+}
+
+.resort-card button {
+    color: white;
+    padding: .8rem;
+}
+
+.availability {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .resort {
+        padding: 1rem;
+    }
+
+    .resort-card {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .resort-1,
+    .resort-2,
+    .resort-3 {
+        padding: 1rem;
+    }
+
+    .availability {
+        flex-direction: column;
+    }
+
+    .sm-screen-hidden {
+        display: none;
     }
 }

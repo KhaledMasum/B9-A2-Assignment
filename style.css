@@ -230,3 +230,75 @@ button {
         border-radius: .5rem;
     }
 }
+
+/* Choose Us */
+.choose-us {
+    margin-top: 4rem;
+}
+
+.choose-us-content {
+    margin-bottom: 2rem;
+}
+
+.choose-us-content h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.choose-us-content p {
+    text-align: center;
+    margin: 0;
+}
+
+.choose-us-container img {
+    height: 80px;
+    width: 80px;
+}
+
+.choose-us-first-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.choose-us-second-row {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.card-1 {
+    background-color: rgba(251, 181, 99, 0.25);
+}
+
+.card-2 {
+    background-color: rgba(41, 206, 246, 0.25);
+}
+
+.card-3 {
+    background-color: rgba(233, 68, 68, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+    .choose-us {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .choose-us-content {
+        margin-bottom: 1rem;
+    }
+
+    .choose-us-first-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .choose-us-second-row {
+        width: 100%;
+    }
+}

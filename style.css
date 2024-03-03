@@ -72,7 +72,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/images/group-13.png");
+    background-image: url("Images/group-13.png");
     background-size: cover;
     height: 100%;
     color: white;
@@ -370,7 +370,7 @@ button {
 .resort-1,
 .resort-2,
 .resort-3 {
-    background-image: url("/images/group-39.png");
+    background-image: url("Images/group-39.png");
     background-size: cover;
     padding: 2rem;
     display: flex;
@@ -380,7 +380,7 @@ button {
 }
 
 .resort-2 {
-    background-image: url("/images/group-40.png");
+    background-image: url("Images/group-40.png");
     justify-content: start;
 }
 

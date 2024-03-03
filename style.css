@@ -21,12 +21,49 @@ h1 {
 }
 
 header,
-main,
-footer {
-    max-width: 1170px;
+main {
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #f2f2f2;
 }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.navbar i {
+    font-size: 2rem;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar i {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}
+
 
 /* Top Banner Start */
 .top-banner {
@@ -314,19 +351,20 @@ button {
 }
 
 /* Discount */
-.discount-content {
+.resort {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
-.discount-content h1 {
+.resort-content h1 {
     text-align: center;
     margin: 0;
 }
 
-.discount-content p {
+.resort-content p {
     text-align: center;
     margin: 0;
+    margin-bottom: .5rem;
 }
 
 .resort-1,
@@ -385,6 +423,8 @@ button {
 @media screen and (max-width: 600px) {
     .resort {
         padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .resort-card {
@@ -522,4 +562,73 @@ button {
     .newsletter-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* Partners */
+.our-partners {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.partners-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.our-partners h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.partners-container img {
+    width: 100%;
+    transition: .5s;
+}
+
+.partners-container img:hover {
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 600px) {
+    .our-partners {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .partners-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 4rem;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer p {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.social-media i {
+    font-size: 2rem;
 }
